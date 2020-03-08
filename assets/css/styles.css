@@ -1,0 +1,99 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: content-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    text-decoration: none;
+
+}
+
+.container{
+    display: grid;
+    margin-top: 20px;
+
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 10% 20% 70%;
+
+    grid-template-areas:  
+    "titulo titulo"
+    "agregar mostrar"
+    "nada mostrar";
+}
+
+ .titulo{
+    grid-area: titulo;
+    justify-self: center;
+    padding: 20px;
+    font-family: 'Helvetica';
+}
+
+.agregarNotas{
+    grid-area: agregar;
+    padding: 30px;  
+}
+
+.agregarNotas form{
+    display: flex;
+    flex-direction: column;
+    margin-top:10px;
+}
+.agregarNotas #caja{
+    height: 50px;
+    padding: 5px;
+}
+.agregarNotas .btnAgregar{
+    margin-top: 10px;
+    background-color: #4385f4;
+    color:white;
+    height: 40px;
+    font-size: 16px;
+    border: 0px;
+    cursor: pointer;
+}
+
+
+.mostrarNotas{
+    grid-area: mostrar;
+    padding-left: 50px;
+    padding-right: 30px;
+
+}
+.mostrarNotas h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.btnEliminar{
+    color: red;
+    float: right;
+    cursor: pointer;
+}
+.tareas{
+    margin-bottom: 20px;
+}
+.tareas:first-child{
+    margin-top: 20px;
+}
+@media (max-width: 500px){
+    .container{
+      grid-template-areas:  
+        "titulo titulo"
+        "agregar agregar"
+        "mostrar mostrar";  
+        grid-template-rows: 10% 17% 73%;
+
+    }
+    .mostrarNotas{
+        grid-area: mostrar;
+    
+    }
+    .agregarNotas .btnAgregar{
+        height: 30px;
+        font-size: 14px;
+        font-weight: normal;
+
+    }
+    
+}
