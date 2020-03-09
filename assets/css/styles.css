@@ -45,6 +45,7 @@
 .agregarNotas #caja{
     height: 50px;
     padding: 5px;
+    font-size: 18px;;
 }
 .agregarNotas .btnAgregar{
     margin-top: 10px;
