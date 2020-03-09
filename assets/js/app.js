@@ -6,7 +6,6 @@ EventsListeners();
 function EventsListeners(){
     //Cuando se envia el formulario
     document.getElementById("formulario").addEventListener('submit', agregarTarea);
-    document.getElementById("caja").focus();
     //Cuando se elimna una tarea
     listaTareas.addEventListener('click', borrarTarea);
 
@@ -39,7 +38,6 @@ function agregarTarea(e){
 
     //Eliminos la tarea que este dentro del text area y hacemos focus
     document.getElementById("caja").value = "";
-    document.getElementById("caja").focus();
 
     //Añadir a Local Storage
     agregarTareaLS(tarea);
