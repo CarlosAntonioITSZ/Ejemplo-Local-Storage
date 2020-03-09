@@ -13,12 +13,14 @@
     margin-top: 20px;
 
     grid-template-columns: 55% 45%;
-    grid-template-rows: 10% 20% 70%;
+    grid-template-rows: 100px 200px auto;
 
     grid-template-areas:  
     "titulo titulo"
     "agregar mostrar"
     "nada mostrar";
+
+
 }
 
  .titulo{
@@ -31,6 +33,8 @@
 .agregarNotas{
     grid-area: agregar;
     padding: 30px;  
+    padding-top: 5px;
+
 }
 
 .agregarNotas form{
@@ -82,7 +86,7 @@
         "titulo titulo"
         "agregar agregar"
         "mostrar mostrar";  
-        grid-template-rows: 10% 17% 73%;
+        grid-template-rows: 100px 160px 200px;
 
     }
     .mostrarNotas{
