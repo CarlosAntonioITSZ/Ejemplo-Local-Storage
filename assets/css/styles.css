@@ -8,20 +8,24 @@
 
 }
 
+
+/*-------------CONTENEDOR PRINCIPAL-----------------*/
+
 .container{
     display: grid;
     margin-top: 20px;
-
     grid-template-columns: 55% 45%;
-    grid-template-rows: 100px 200px auto;
+    grid-template-rows: 200px 200px auto;
 
     grid-template-areas:  
     "titulo titulo"
     "agregar mostrar"
     "nada mostrar";
-
-
 }
+/*---------------------------------------*/
+
+
+/*-------------TITULO--------------------*/
 
  .titulo{
     grid-area: titulo;
@@ -29,7 +33,12 @@
     padding: 20px;
     font-family: 'Helvetica';
 }
+/*---------------------------------------*/
 
+
+
+
+/*---------DONDE SE AGREGAN LAS TAREAS-------------------*/
 .agregarNotas{
     grid-area: agregar;
     padding: 30px;  
@@ -56,7 +65,11 @@
     border: 0px;
     cursor: pointer;
 }
+/*---------------------------------------*/
 
+
+
+/*--------DONDE SE MOSTRARAN LAS TAREAS------------------*/
 
 .mostrarNotas{
     grid-area: mostrar;
@@ -68,26 +81,107 @@
     text-align: center;
     margin-bottom: 10px;
 }
+/*---------------------------------------*/
 
 
+
+/*---------------TAREAS QUE SE AGREGAN -----------*/
+
+.tareas{
+    margin-bottom: 35px;
+    border-bottom: 1px solid #ccc;
+    font-size: 20px;
+    padding: 5px;
+
+    height: auto;
+    word-wrap: break-word;
+
+}
+.tareas:first-child{
+    margin-top: 20px;
+}
 .btnEliminar{
     color: red;
     float: right;
     cursor: pointer;
 }
-.tareas{
-    margin-bottom: 20px;
-}
-.tareas:first-child{
+/*---------------------------------------*/
+
+
+
+
+
+/*-----------------SWITCH----------------*/
+.switch{
+    background-color: #343D5B;
+    border-radius: 1000px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    margin: 0px auto;
+    outline: none;
     margin-top: 20px;
+
 }
+
+.switch::after{
+    content: "";
+    display: block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    background-color: #f1f1f1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    transform: .3s ease all ;
+    -webkit-transform: .3s ease all ;
+    -moz-transform: .3s ease all ;
+    -ms-transform: .3s ease all ;
+    -o-transform: .3s ease all ;
+}
+.switch.active{
+    background-color: orange;
+    color: #000;
+}
+.switch.active.switch::after{
+    left: unset;
+    right: 0;
+}
+
+.switch span{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 17px;
+    display: block;
+    background: none;
+    color: white;
+}
+/*---------------------------------------*/
+
+
+
+
+
+/*-------------RESPONSIVE-----------------*/
 @media (max-width: 500px){
     .container{
       grid-template-areas:  
         "titulo titulo"
         "agregar agregar"
         "mostrar mostrar";  
-        grid-template-rows: 100px 160px 200px;
+        grid-template-rows: 150px 160px 200px;
 
     }
     .mostrarNotas{
@@ -102,3 +196,4 @@
     }
     
 }
+/*---------------------------------------*/
