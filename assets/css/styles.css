@@ -58,11 +58,11 @@
 }
 .agregarNotas .btnAgregar{
     margin-top: 10px;
-    background-color: #4385f4;
+    background-color: #343D5B;
     color:white;
     height: 40px;
     font-size: 16px;
-    border: 0px;
+    border: none;
     cursor: pointer;
 }
 /*---------------------------------------*/
@@ -171,7 +171,31 @@
 /*---------------------------------------*/
 
 
+/*--------------MODO DARK--------------------*/
 
+body{
+    transition: .3s ease all;
+    -webkit-transition: .3s ease all;
+    -moz-transition: .3s ease all;
+    -ms-transition: .3s ease all;
+    -o-transition: .3s ease all;
+}
+
+body.dark{
+    color:white;
+    background-color:#222424;
+}
+
+body.dark.btnEliminar{
+    color: #b90b0b
+}
+body.dark #caja{
+    background-color:#3d3f3f;
+    border: none;
+    color: white;
+
+}
+/*---------------------------------------*/
 
 
 /*-------------RESPONSIVE-----------------*/
@@ -193,6 +217,10 @@
         font-size: 14px;
         font-weight: normal;
 
+    }
+
+    .tareas{
+        font-size: 17px;
     }
     
 }
