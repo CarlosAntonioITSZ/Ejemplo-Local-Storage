@@ -7,7 +7,12 @@
     text-decoration: none;
 
 }
-
+form,
+form input,{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 
 /*-------------CONTENEDOR PRINCIPAL-----------------*/
 
@@ -43,7 +48,6 @@
     grid-area: agregar;
     padding: 30px;  
     padding-top: 5px;
-
 }
 
 .agregarNotas form{
@@ -194,6 +198,14 @@ body.dark #caja{
     border: none;
     color: white;
 
+}
+body.dark .agregarNotas .btnAgregar{
+    background-color: #47537c;
+  
+}
+
+body.dark #caja{
+    box-shadow: 1px 1px 10px #47537c inset;
 }
 /*---------------------------------------*/
 
