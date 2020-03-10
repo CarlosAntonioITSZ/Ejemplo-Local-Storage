@@ -1,6 +1,5 @@
 //Variables
 const listaTareas = document.getElementById('lista');
-
 //Eventos
 EventsListeners();
 function EventsListeners(){
@@ -8,12 +7,14 @@ function EventsListeners(){
     document.getElementById("formulario").addEventListener('submit', agregarTarea);
     //Cuando se elimna una tarea
     listaTareas.addEventListener('click', borrarTarea);
-
+ 
     //Cargando contenido
     document.addEventListener('DOMContentLoaded',cargarLS);
 }
 
 //Funciones
+
+
 function agregarTarea(e){
     e.preventDefault();
     

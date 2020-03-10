@@ -8,7 +8,7 @@
 
 }
 form,
-form input,{
+form input{
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -48,6 +48,7 @@ form input,{
     grid-area: agregar;
     padding: 30px;  
     padding-top: 5px;
+    
 }
 
 .agregarNotas form{
@@ -58,7 +59,9 @@ form input,{
 .agregarNotas #caja{
     height: 50px;
     padding: 5px;
-    font-size: 18px;;
+    font-size: 18px;
+    border: 1.8px solid #343D5B;
+
 }
 .agregarNotas .btnAgregar{
     margin-top: 10px;
@@ -69,6 +72,7 @@ form input,{
     border: none;
     cursor: pointer;
 }
+
 /*---------------------------------------*/
 
 
