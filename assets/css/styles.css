@@ -208,9 +208,7 @@ body.dark .agregarNotas .btnAgregar{
   
 }
 
-body.dark #caja{
-    box-shadow: 1px 1px 10px #47537c inset;
-}
+
 /*---------------------------------------*/
 
 
@@ -220,8 +218,8 @@ body.dark #caja{
       grid-template-areas:  
         "titulo titulo"
         "agregar agregar"
-        "mostrar mostrar";  
-        grid-template-rows: 150px 160px 200px;
+        "mostrar mostrar";
+        grid-template-rows: 150px 160px auto;
 
     }
     .mostrarNotas{
@@ -237,6 +235,9 @@ body.dark #caja{
 
     .tareas{
         font-size: 17px;
+    }
+    .tareas:last-child{
+        margin-bottom: 70px;
     }
     
 }
